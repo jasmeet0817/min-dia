@@ -225,6 +225,7 @@ class _PodcastListenerWidgetState extends State<PodcastListenerWidget>
     //   widget.chapterIndex,
     //   percentageListened.toInt(),
     // );
+    print('percentageListened: $percentageListened');
     if (percentageListened > 94) {
       _currentPosition = Duration.zero;
     }
