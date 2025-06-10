@@ -31,12 +31,12 @@ class ContinueListeningController extends GetxController with WidgetsBindingObse
     super.onClose();
   }
 
-  @override
-  void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
-      stopAndSavePosition();
-    }
-  }
+  // @override
+  // void didChangeAppLifecycleState(AppLifecycleState state) {
+  //   if (state == AppLifecycleState.paused || state == AppLifecycleState.inactive) {
+  //     stopAndSavePosition();
+  //   }
+  // }
 
   void loadSavedPosition() {
     final seconds = box.read('last_position') ?? 0;
